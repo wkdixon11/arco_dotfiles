@@ -1,0 +1,35 @@
+vundle
+nerdtree
+vifm
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+pacman -S vifm
+pacman -S vim-nerdtree
+paru -S vundle-git
+ttf-iosevka-git
+ttf-envy-code-r
+sudo pacman -S paru
+omz theme use jonathan
+sudo pacman -S alacritty
+sudo reflector -c "canada" -p http,https > /etc/pacman.d/mirrorlist
+sudo pacman -S spotify
+sudo pacman -S audacity
+sudo pacman -S vlc
+digikam
+audacious
+bupskel
+python-pywal
+sudo pacman -S visual-studio-code-bin
+sudo vim /usr/share/X11/xorg.conf.d/10-amdgpu.conf
+sudo vim /usr/share/X11/xorg.conf.d/10-radeon.conf
+#fc-list
+#  217  fc-list | awk ($1)
+#  218  fc-list | awk { print $1 }
+#  219  fc-list | awk '{ print $1 }'
+#  220  fc-list | awk '{ print $1 }' | grep -i ttf
+#  221  fc-list | awk '{ print $1 }' | grep -i \/ttf
+#  222  fc-list : family style
+#  223  fc-list : family style | grep -i mono
+#  224  fc-list : family style | grep -i bold
+#  225  fc-list : family style | grep -i ubuntu
+#  226  fc-list : family style | grep -i nerd
+git clone https://gitlab.com/dwt1/dotfiles.git
