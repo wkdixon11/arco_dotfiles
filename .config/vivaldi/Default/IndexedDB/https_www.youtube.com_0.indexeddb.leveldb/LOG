@@ -1,0 +1,12 @@
+2021/03/18-17:33:15.349 3ee4 Reusing MANIFEST /home/wayne/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/18-17:33:15.349 3ee4 Recovering log #10
+2021/03/18-17:33:15.353 3ee4 Reusing old log /home/wayne/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000010.log 
+2021/03/18-18:11:14.046 4786 Level-0 table #15: started
+2021/03/18-18:11:14.057 4786 Level-0 table #15: 914075 bytes OK
+2021/03/18-18:11:14.059 4786 Delete type=0 #10
+2021/03/18-19:34:02.547 4b81 Compacting 1@1 + 1@2 files
+2021/03/18-19:34:02.553 4b81 Generated table #16@1: 292 keys, 21571 bytes
+2021/03/18-19:34:02.553 4b81 Compacted 1@1 + 1@2 files => 21571 bytes
+2021/03/18-19:34:02.554 4b81 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/18-19:34:02.554 4b81 Delete type=2 #15
+2021/03/18-19:34:02.554 4b81 Delete type=2 #12

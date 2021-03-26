@@ -1,0 +1,14 @@
+0
+/usr/share/backgrounds/arcolinux/sea-3992x2242.jpg
+/usr/share/backgrounds/arcolinux/floating-world-in-space-3000x2357.jpg
+/usr/share/backgrounds/arcolinux/peaceofmind-1920x1200.jpg
+/usr/share/backgrounds/arcolinux/floating-world-in-space-3000x2357.jpg
+/home/wayne/.config/variety/Downloaded/Bing/OHR.LeMorneBrabant_EN-US7199520186_1920x1080.jpg
+/home/wayne/.config/variety/Downloaded/Bing/OHR.PeritoMorenoArgentina_EN-US6161367346_1920x1080.jpg
+/usr/share/backgrounds/xfce/Squirrel.jpg
+/usr/share/backgrounds/xfce/alone.jpg
+/usr/share/backgrounds/xfce/Forrest.jpg
+/usr/share/backgrounds/arcolinux/bluez-7650x5120.jpg
+/usr/share/backgrounds/arcolinux/blue-earth-2880x1800.jpg
+/usr/share/backgrounds/arcolinux/arco-login.jpg
+/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg

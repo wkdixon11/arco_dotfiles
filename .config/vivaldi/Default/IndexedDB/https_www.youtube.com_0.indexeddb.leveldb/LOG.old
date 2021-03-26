@@ -1,0 +1,4 @@
+2021/03/18-17:02:11.752 333d Reusing MANIFEST /home/wayne/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/18-17:02:11.752 333d Recovering log #10
+2021/03/18-17:02:11.756 333d Reusing old log /home/wayne/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000010.log 
+2021/03/18-17:02:11.756 333d Delete type=2 #5

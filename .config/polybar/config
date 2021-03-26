@@ -305,7 +305,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = ewmh xwindow
 modules-center = kernel
-modules-right =  memory2 cpu2 date
+modules-right =  networkspeeddown networkspeedup memory2 cpu2 date
 
 tray-detached = false
 tray-offset-x = 0
@@ -690,15 +690,15 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "DejaVu Sans:size=10;0"
+font-0 = "Noto Sans:size=10;0"
 font-1 = "FontAwesome:size=13;0"
-font-2 = "DejaVu Sans:size=10;0"
-font-3 = "Dejavu Sans Mono:size=10;0"
+font-2 = "Noto Sans:size=10;0"
+font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "FontAwesome5Brands:size=13;0"
 
 modules-left = ewmh
-modules-center =
-modules-right = pavolume memory2 cpu2 date battery networkspeeddown networkspeedup
+modules-center = kernel
+modules-right = pavolume memory2 cpu2 date
 
 tray-detached = false
 tray-offset-x = 0
@@ -1655,7 +1655,7 @@ format-online-background = ${colors.background}
 type = internal/network
 ;interface = wlp3s0
 ;interface = enp14s0
-interface = wlo1
+interface = enp7s0
 ;interface = enp4s0
 label-connected = "%upspeed:7%"
 format-connected = <label-connected>
@@ -1672,7 +1672,7 @@ format-connected-background = ${colors.background}
 type = internal/network
 ;interface = wlp3s0
 ;interface = enp14s0
-interface = wlo1
+interface = enp7s0
 ;interface = enp4s0
 label-connected = "%downspeed:7%"
 format-connected = <label-connected>

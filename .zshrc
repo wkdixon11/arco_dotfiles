@@ -35,7 +35,7 @@ ZSH_THEME="jonathan"
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
-# Uncomment the following line if pasting URLs and other text is messed up.
+# Uncomment the following line if pasting URLs and other text is messed 
 # DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
@@ -54,6 +54,10 @@ ZSH_THEME="jonathan"
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
+# 
+# Set Manpager
+
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -125,6 +129,9 @@ alias la='ls -a'
 alias ll='ls -la'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
+
+#Replace less with bat
+alias less="bat"
 
 #fix obvious typo's
 alias cd..='cd ..'
@@ -305,4 +312,4 @@ ex ()
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
 neofetch
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

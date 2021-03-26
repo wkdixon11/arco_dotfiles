@@ -1,0 +1,27 @@
+2021/03/18-17:33:02.028 3 Reusing MANIFEST /home/wayne/.config/vivaldi/Default/Local Storage/leveldb/MANIFEST-000001
+2021/03/18-17:33:02.029 3 Recovering log #16
+2021/03/18-17:33:02.029 3 Reusing old log /home/wayne/.config/vivaldi/Default/Local Storage/leveldb/000016.log 
+2021/03/18-17:36:51.687 5 Level-0 table #21: started
+2021/03/18-17:36:51.695 5 Level-0 table #21: 365730 bytes OK
+2021/03/18-17:36:51.697 5 Delete type=0 #16
+2021/03/18-17:59:15.172 11 Level-0 table #23: started
+2021/03/18-17:59:15.180 11 Level-0 table #23: 89533 bytes OK
+2021/03/18-17:59:15.181 11 Delete type=0 #20
+2021/03/18-18:02:15.172 11 Level-0 table #25: started
+2021/03/18-18:02:15.189 11 Level-0 table #25: 713823 bytes OK
+2021/03/18-18:02:15.191 11 Delete type=0 #22
+2021/03/18-21:20:46.108 3a Level-0 table #27: started
+2021/03/18-21:20:46.110 3a Level-0 table #27: 9931 bytes OK
+2021/03/18-21:20:46.113 3a Delete type=0 #24
+2021/03/18-21:20:46.113 3a Compacting 4@0 + 1@1 files
+2021/03/18-21:20:46.129 3a Generated table #28@0: 78 keys, 1146946 bytes
+2021/03/18-21:20:46.130 3a Compacted 4@0 + 1@1 files => 1146946 bytes
+2021/03/18-21:20:46.131 3a compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/03/18-21:20:46.132 3a Delete type=2 #27
+2021/03/18-21:20:46.132 3a Delete type=2 #18
+2021/03/18-21:20:46.132 3a Delete type=2 #21
+2021/03/18-21:20:46.132 3a Delete type=2 #23
+2021/03/18-21:20:46.132 3a Delete type=2 #25
+2021/03/18-21:40:20.420 3a Level-0 table #30: started
+2021/03/18-21:40:20.427 3a Level-0 table #30: 19242 bytes OK
+2021/03/18-21:40:20.429 3a Delete type=0 #26

@@ -75,7 +75,7 @@ keys = [
     Key([mod], "Escape", lazy.spawn('xkill')),
     Key([mod], "Return", lazy.spawn('alacritty')),
     Key([mod], "KP_Enter", lazy.spawn('alacritty')),
-    Key([mod], "F1", lazy.spawn('firefox')),
+    Key([mod], "F1", lazy.spawn('vivaldi-stable')),
     Key([mod], "F2", lazy.spawn('atom')),
     Key([mod], "F3", lazy.spawn('inkscape')),
     Key([mod], "F4", lazy.spawn('gimp')),
@@ -350,7 +350,7 @@ def init_widgets_list():
     prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
                widget.GroupBox(font="FontAwesome",
-                        fontsize = 16,
+                        fontsize = 12,
                         margin_y = -1,
                         margin_x = 0,
                         padding_y = 6,
@@ -387,14 +387,28 @@ def init_widgets_list():
                         foreground = colors[5],
                         background = colors[1],
                         ),
-                widget.Net(
-                         font="Noto Sans",
-                         fontsize=12,
-                         interface="wlo1",
-                         foreground=colors[2],
-                         background=colors[1],
-                         padding = 0,
-                         ),
+               widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[2],
+                        background = colors[1]
+                        ),
+               widget.TextBox(
+                        font="FontAwesome",
+                        text="  ",
+                        foreground=colors[4],
+                        background=colors[1],
+                        padding = 0,
+                        fontsize=16
+                        ),
+               widget.Net(
+                        font="Noto Sans",
+                        fontsize = 12,
+                        interface="enp7s0",
+                        foreground=colors[2],
+                        background=colors[1],
+                        padding = 0,
+                        ),
                # widget.Sep(
                #          linewidth = 1,
                #          padding = 10,
@@ -431,20 +445,20 @@ def init_widgets_list():
                #          threshold = 80
                #          ),
                # # battery option 1  ArcoLinux Horizontal icons do not forget to import arcobattery at the top
-                widget.Sep(
-                         linewidth = 1,
-                         padding = 10,
-                         foreground = colors[2],
-                         background = colors[1]
-                         ),
-                arcobattery.BatteryIcon(
-                         padding=0,
-                         scale=0.7,
-                         y_poss=2,
-                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
-                         update_interval = 5,
-                         background = colors[1]
-                         ),
+#                widget.Sep(
+#                         linewidth = 1,
+#                         padding = 10,
+#                         foreground = colors[2],
+#                         background = colors[1]
+#                         ),
+#                arcobattery.BatteryIcon(
+#                         padding=0,
+#                         scale=0.7,
+#                         y_poss=2,
+#                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
+#                         update_interval = 5,
+#                         background = colors[1]
+#                         ),
                # # battery option 2  from Qtile
                # widget.Sep(
                #          linewidth = 1,
@@ -485,6 +499,29 @@ def init_widgets_list():
                         ),
                widget.TextBox(
                         font="FontAwesome",
+                        text="  ",
+                        foreground=colors[4],
+                        background=colors[1],
+                        padding = 0,
+                        fontsize=16
+                        ),
+                widget.CPU(
+                        font="Noto Sans",
+                        #format = '{MemUsed}M/{MemTotal}M',
+                        update_interval = 1,
+                        fontsize = 12,
+                        foreground = colors[2],
+                        background = colors[1],
+                        mouse_callbacks = {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e htop')},
+                       ),
+               widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[2],
+                        background = colors[1]
+                        ),
+               widget.TextBox(
+                        font="FontAwesome",
                         text="  ",
                         foreground=colors[4],
                         background=colors[1],
@@ -517,7 +554,7 @@ def init_widgets_list():
                         foreground = colors[5],
                         background = colors[1],
                         fontsize = 12,
-                        format="%Y-%m-%d %H:%M"
+                        format="%Y-%m-%d %I:%M %p"
                         ),
                widget.Sep(
                         linewidth = 1,
@@ -528,7 +565,7 @@ def init_widgets_list():
                widget.Systray(
                         background=colors[1],
                         icon_size=20,
-                        padding = 4
+                        padding = 10 
                         ),
               ]
     return widgets_list
